@@ -10,6 +10,7 @@
 
 - 초기에 폴더를 깃으로 관리하겠다 라고 선언하는 명령어
 - 현재 폴더에 `.git/`폴더가 생성된다.
+- 그렇다면 init 을 취소하기 위해서는? `rm -r`을 이용해서 `.git`폴더를 삭제한다.  
 
 
 
@@ -32,15 +33,32 @@
 
 - 로컬에 있는 커밋기록을 원격저장소로 업로드한다. 
 
+```shell
+$ git push origin master			
+```
+
+-> "야 깃! origin 위치로 master를 옮겨주라~ "
+
+### remote
+
+- 내가 `git init` 으로 git과 연결하겠다고 작정한 폴더와 인터넷 상의 내 git을 연결해 주는 것
+
+```shell
+$ git remote add origin https://github.com/nanimo22/...git
+```
+
+-> "야 깃! 원격 저장소를 추가해줘. origin이라는 이름으로. 근데 https:// ... 이곳에 있는 것을 "
 
 
-### (remote, config 알아서 정리하샘)
+
+### config 알아서 정리하샘)
 
 
 
 ### clone
 
 - 원격 저장소에 있는 프로젝트를 복제하는 명령어
+- 맨 처음 아예 한번도 한 적 없을 때는 clone을 사용하고, 그 이후에는 pull 사용하면 되겠지요
 
 ```shell
 $ git clone <원격저장소 주소>
