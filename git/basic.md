@@ -49,3 +49,4 @@ $ git clone <원격저장소 주소>
 ### pull![여러대의 컴퓨터와 Git 연결](basic.assets/여러대의 컴퓨터와 Git 연결.PNG)
 
 - 원격 저장소에서 최근 커밋을 불러오는 명령어: Github -> my home 으로 가져오는게 pull
+
